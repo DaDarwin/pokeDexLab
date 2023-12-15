@@ -1,14 +1,8 @@
 import { AppState } from "../AppState.js"
-import { baseURL } from "../env.js"
 import { Pokemon } from "../models/pokemon.js"
 
 
 
-export const api = axios.create({
-    baseURL: baseURL,
-    timeout: 8000,
-    withCredentials: true
-  })  
 
 let pokeApi = axios.create({
     baseURL:'https://pokeapi.co/api/v2/pokemon',
